@@ -84,7 +84,7 @@ body {
 }
 
 .section-hero {
-  background-color: #e2e2e2;
+  /* background-color: #f0f0f0; */
   padding: 4.8rem 0 9.6rem 0;
 }
 
@@ -119,13 +119,19 @@ body {
 .heading-secondary {
   line-height: 1.2;
   font-size: 4.4rem;
-  margin-bottom: 6.4rem;
+  margin-bottom: 9.6rem;
 }
 
 .heading-tertiary {
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
+}
+
+.third-heading {
+  line-height: 1.2;
+  font-size: 4.4rem;
+  margin-bottom: 9.6rem;
 }
 
 .subheading {
@@ -218,6 +224,10 @@ body {
 .delivered-text {
   font-size: 1.8rem;
   font-weight: 600;
+}
+
+.section-featured {
+  background-color: #f0f0f0;
 }
 
 /* create reuseable grid */
@@ -314,4 +324,139 @@ body {
 .logo-featured-in {
   display: flex;
   justify-content: space-around;
+}
+
+.meal {
+  background-color: #f0f0f0
+}
+
+.meal-title,
+.testimonial-title {
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #004d0a;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 3px;
+}
+
+.meal-container {
+  display: grid;
+  max-width: 140rem;
+  padding: 3.2rem;
+  margin: 0 auto;
+  gap: 25px;
+}
+
+.vegetarian-wrapper,
+.vegan-wrapper,
+.non-vegetarian-wrapper {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.35);
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.meal-picture {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  width: 350px;
+  height: 350px;
+  background-color: #f0f0f0;
+}
+
+.meal-picture img {
+  /* transition: transform 1.5s ease; */
+  transition: transform .5s ease-in-out;
+  width: 175px;
+  height: 175px;
+  /* padding: 2px; */
+}
+
+.description,
+.description ul {
+  text-align: center;
+  list-style: none;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  line-height: 5rem;
+}
+
+.meal-picture img:hover {
+  transform: scale(1.5) rotate(10deg);
+  z-index: 1;
+}
+
+.title-span {
+  text-transform: uppercase;
+  display: inline;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 15px;
+  color: #333;
+}
+
+.title-span--vegetarian {
+  background: #51cf66;
+}
+
+.title-span--vegan {
+  background: #94d82d;
+}
+
+.title-span--non-vegetarian {
+  background: #c36200d3;
+}
+
+.meal-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  color: #333;
+}
+
+.info-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.testimonial {
+  margin-top: 8rem;
+}
+
+.testimonial-text {
+  font-size: 2rem;
+  background-color: #f0f0f0;
+  padding: 5px;
+}
+
+.customer-info img {
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+}
+
+.container-testimonial {
+  display: grid;
+  max-width: 140rem;
+  /* min-height: 100rem; */
+  margin: auto;
+}
+
+.customer-1,
+.customer-2,
+.customer-3,
+.customer-4,
+.customer-5,
+.customer-6 {
+  margin: 2rem;
+  display: flex;
+  gap: 10px;
 }
