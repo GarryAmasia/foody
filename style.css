@@ -371,9 +371,14 @@ body {
   background-color: #f0f0f0;
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 .meal-picture img {
   /* transition: transform 1.5s ease; */
-  transition: transform .5s ease-in-out;
+  /* transition: transform .5s ease-in-out; */
+  transition: all 0.4s;
   width: 175px;
   height: 175px;
   /* padding: 2px; */
@@ -389,7 +394,8 @@ body {
 }
 
 .meal-picture img:hover {
-  transform: scale(1.5) rotate(10deg);
+  /* transform: scale(1.5) rotate(10deg); */
+  transform: scale(1.1);
   z-index: 1;
 }
 
