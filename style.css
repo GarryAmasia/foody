@@ -432,15 +432,35 @@ body {
 }
 
 .testimonial-text {
+  display: flex;
+  flex-direction: column;
   font-size: 2rem;
-  background-color: #f0f0f0;
+  background-color: #f0f0f098;
   padding: 5px;
+  border-radius: 20px;
+}
+
+.text {
+  margin: 10px;
+}
+
+.customer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 .customer-info img {
   border-radius: 50%;
   width: 15rem;
   height: 15rem;
+}
+
+.customer-location {
+  color: rgb(60, 100, 60);
+  font-weight: 700;
 }
 
 .container-testimonial {
@@ -459,4 +479,12 @@ body {
   margin: 2rem;
   display: flex;
   gap: 10px;
+}
+
+.fas {
+  display: flex;
+  justify-content: right;
+  font-size: 6rem;
+  opacity: 5%;
+  text-align: center;
 }
